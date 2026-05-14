@@ -1,0 +1,134 @@
+@media only screen and (max-width: 440px){
+    .simulationsArticle{
+        display: block !important;
+        height: 475px !important;
+        width: 50vw !important;
+        .simulationsInfo{
+            height: 180px;
+            .siteInfo{
+                h5{
+                    font-size: 16px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+            .title{
+                position: relative;
+                bottom: 20px;
+                left: 15px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1050px){
+    .simulationsArticle{
+        width: 90vw !important;
+    }
+}
+.simulations{
+        padding: 80px 0;
+    min-height: 500px;
+    background-color: white;
+
+    .header{
+        text-align: center;
+        color: rgba(2, 87, 245, 1);
+    }
+    .simulationsContainer{
+        margin-left: 50px;
+        .simulationsList{
+            padding: 5px;
+            position: relative;
+            right: 20px;
+            &::-webkit-scrollbar{
+                display: none;
+            }
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            overflow-x: scroll;
+            list-style: none;
+            display: flex;
+            min-height: 400px;
+            align-items: center;
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            .simulationsArticle{
+                scroll-snap-align: start;
+                scroll-snap-stop: always;
+                box-shadow: 1px 1px 10px grey;
+                width: 95vw;
+                height: 390px;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                border-radius: 20px;
+                margin-right: 35px;
+                background-color: whitesmoke;
+                
+                .siteImg{
+                    border: 1px solid black;
+                    height: 50%;
+                    width: 90%;
+                    margin: auto;
+                    }
+                .simulationsInfo{
+                    display: grid;
+                    grid-template-rows: 20% 60% 20%;
+                    border-radius: 20px;
+                    padding: 10px;
+
+                    .siteInfo{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    .title{
+                        font-size: 22px;
+                    }
+                    .description{
+                        height: 100%;
+                        align-content: center;
+                    }
+                    .langs{
+                        display: flex;
+                        justify-content: space-evenly;
+                        p{
+                            background-color: lightgrey;
+                            border-radius: 20px;
+                            height: 60%;
+                            padding: 0 15px;
+                            align-content: center;
+                        }
+                    }
+                    .links{
+                        width: 80%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin: auto;
+                        p, .site{
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                        p, .git{
+                            &:hover{
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                    
+                }
+                .img{
+                border-radius: 20px 20px 0 0;
+                border: 1px solid lightgrey;
+                margin: 5px;
+                border-bottom: 1px solid lightgrey;
+                }
+            }
+        }
+    }
+}

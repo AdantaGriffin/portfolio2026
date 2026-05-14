@@ -1,0 +1,27 @@
+@media only screen and (max-width: 440px) {
+    .app{
+        overflow: scroll;
+    }
+}
+
+.app{
+    background-color: whitesmoke;
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+
+    p{
+        font-weight: 300;
+        font-size: 18px;
+    }
+}
+section{
+    scroll-snap-align: start;
+    scroll-snap-stop:normal;
+
+}
