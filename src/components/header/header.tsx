@@ -1,7 +1,7 @@
 import styles from './header.module.scss';
 
 import Navigation from '../navigation/navigation';
-import {HashLink} from './react-router-hash-link';
+import {HashLink} from 'react-router-hash-link';
 function Header(){
     return(
         <>
