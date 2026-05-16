@@ -1,151 +1,72 @@
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 1050px) {
     .hero{
-        flex-direction: column-reverse;
-        .left{
-            width: 95% !important;
-            
-            .three{
-            }
-            .four{
-                button{
-                    height: 40px !important;
-                }
-            }
-        }
-        .right{
-            width: 100% !important;
-
-            .codeContainer{
-                width: 85% !important;
-                
-                .containerBottom{
-                    code{
-                    line-height: 1;
-                    }
-                }
-            }
-        }
+        display: block !important;
     }
-}
-
-@media only screen and (max-width: 1050px){
-    .hero{
-        flex-direction: column-reverse;
-        flex-wrap: wrap;
-        .left{
-            width: 80%;
-            margin-bottom: 50px;
-        }
-        .right{
-            margin-top: 50px !important;
-            height: 70vh;
-
-            .codeContainer{
-
-                
-                .containerBottom{
-                    code{
-                    line-height: 1;
-                    }
-                }
-            }
-        }
+    .codeContainer{
+        width: 350px !important;
     }
 }
 .hero{
-    padding: 140px 0;
-    min-height: 500px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
 
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size: 18px;
+    }
     .left{
-        margin-top: 130px;
-        display: grid;
-        grid-template-rows: 50px 200px 100px 100px 50px;
-        p{
-            font-size: 18px;
-        }
+        align-content: center;
+        width: 70%;
+        margin: auto;
+
         .one{
-            padding-left: 50px;
-            p{
-                border-radius: 20px;
-                width: 300px;
-                padding: 0 20px;
-                background-color: rgba(112, 159, 245, 0.6);
-                color: rgba(2, 87, 245, 1);
-                text-align: center;
-            }
+            width: 250px;
+            border-radius: 20px;
+            text-align: center;
+            background: rgb(2, 87, 245, 1);
+            height: 50px;
+            align-content: center;
+            color: white;
+            border-radius: 10px;
+                padding: 0 30px;
         }
 
         .two{
-            padding-left: 50px;
-            h2{
-                font-size: 45px;
-
-                .blue{
-                color: rgba(2, 87, 245, 1);
-                }
-            }
         }
-
-        .three{
-            padding-left: 50px;
-            align-content: center;
-            p{
-                line-height: 1.4;
-            }
-        }
-
         .four{
-            padding-left: 50px;
-            align-content: center;
-
+            display: flex;
+            justify-content: space-around;
             a{
                 padding: 10px 30px;
-                border: none;
-                min-width: 150px;
-                width: 20vw;
-                height: 50px;
-                margin: 5px;
-                border-radius: 20px;
-                box-shadow: 1px 1px 10px lightgrey;
-                text-decoration: none;
-
-                &:hover{
-                    cursor: pointer;
-                    box-shadow: 1px 1px 10px black;
-                }
-            }
-            .profile{
-                background-color: rgba(2, 87, 245, 1);
+                background: rgb(1, 113, 241);
                 color: white;
-            }
-            .contact{
-                background-color: white;
-                color: black;
+                border-radius: 10px;
+                text-decoration: none;
+                width: 150px;
+                align-content: center;
+                height: 40px;
+                text-align: center;
+
             }
         }
-
-        .five{
-            padding-left: 50px;
-            align-content: center;
-            p{
-                line-height: 1.4;
-            }
-        }
-
     }
-    .right{
-        align-content: center;
-        margin-top: 100px;
 
+    .right{
+            height: 500px;
+            align-content: center;
         .codeContainer{
             box-shadow: 1px 1px 10px lightgrey;
-            height: 320px;
-            width: clamp(525px, 1vw, 550px);
-            margin: auto;
             border-radius: 30px;
+            height: 400px;
+            width: 450px;
+            margin: auto;
+            align-content: center;
+            display: grid;
+            grid-template-rows: 10% 90%;
+            padding: 5px 10px;
             code{
                 display: flex;
                 justify-content: center;
@@ -153,7 +74,6 @@
 
             .containerTop{
                 height: 30px;
-                padding: 5px 25px;
 
                 .containerButtons{
                     width: 10%;
@@ -182,10 +102,7 @@
 
             .containerBottom{
                 div{
-                    position: relative;
-                    top: 40px;
-                    width: 100%;
-                    margin: auto;
+
                 }
             }
         }

@@ -41,6 +41,7 @@ function About(){
                             <div className={styles.attributesImage}>
                                 <img src="/icons/caution.png" alt="attIcon" height="30px"/>
                             </div>
+                            
                             <div className={styles.attributesData}>
                                 <h5>Problem Solver</h5>
                                 <p>I enjoy solving problems and building efficient solutions.</p>
@@ -69,6 +70,7 @@ function About(){
                     </div>
 
                 </div>
+                
             </motion.section>
         </>
     )

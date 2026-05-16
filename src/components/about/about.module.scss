@@ -1,13 +1,7 @@
 @media only screen and (max-width: 1050px){
-    .about{
-
-        .aboutContainer{
-            display: block !important;
-        }
-        .attributes{
-            width: 400px !important;
-            margin: 5px;
-        }
+    .attributes{
+        display: block !important;
+        text-align: center;
     }
 }
 @media only screen and (max-width: 440px){
@@ -18,75 +12,25 @@ h3{
     font-size: 45px;
 }
 .about{
-    padding: 80px 0;
-    .header{
+    width: 90%;
+    margin: auto;
+    header{
         text-align: center;
         color: rgba(2, 87, 245, 1);
     }
+
     .aboutContainer{
-        display: grid;
-        grid-template-columns: 30% 70%;
+    }
 
-        .aboutText{
+    .aboutAttributes{
+        display: flex;
+        flex-wrap: wrap;
+
+        .attributes{
+            width: 45%;
             display: grid;
-            grid-template-rows: 1fr 1fr;
-            margin-left: 50px;
-
-            p{
-                font-size: 18px;
-                line-height: 1.4;
-            }
-        }
-
-        .aboutAttributes{
-            margin: auto;
-            gap: 55px;
-            display: flex;
-            flex-wrap: wrap;
+            grid-template-columns: 1fr 2fr;
             align-items: center;
-            justify-content: space-evenly;
-
-            .attributes{
-                height: 75px;
-                width: 300px;
-                display: flex;
-                justify-content: space-between;
-                font-size: 1.1em;
-                h3{
-                    font-size: 22px;
-                }
-                p{
-                    font-size: 16px;
-                }
-                &:hover{
-                    cursor: pointer;
-                    transform: scale(1.1);
-                }
-                .attributesImage{
-                    width: 50px;
-                    height: 60px;
-                    margin: auto;
-                    align-content: center;
-                    text-align: center;
-                    border-radius: 20px;
-                    background-color: white;
-                    padding: 5px;
-                    
-                }
-
-                .attributesData{
-                    border-radius: 20px;
-                    width: 60%;
-                    display: grid;
-                    grid-template-rows: 20% 80%;
-                    align-items: center;
-                    padding: 5px;
-                    h5{
-                        position: relative;
-                        bottom: 10px;
-                    }
-                }
-            }
         }
     }
 }

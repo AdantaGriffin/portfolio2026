@@ -42,7 +42,7 @@ function Hero(){
                 id="home" 
                 className={styles.hero}>
 
-                <section>
+                <div className={styles.leftContainer}>
                     <div className={styles.left}>
 
                     <div className={styles.one}>
@@ -51,7 +51,8 @@ function Hero(){
 
                     <div className={styles.two}>
                         <h2>
-                        I build clean, responsive, web <span className={styles.blue}>experiences.</span></h2>
+                        I build clean, responsive, web <span className={styles.blue}>experiences.</span>
+                        </h2>
                     </div>
 
                     <div className={styles.three}>
@@ -68,9 +69,9 @@ function Hero(){
                     </div>
 
                     </div>
-                </section>
+                </div>
 
-                <section>
+                <div className={styles.rightContainer}>
                     <div className={styles.right}>
 
                     <div className={styles.codeContainer}>
@@ -103,7 +104,7 @@ function Hero(){
                     </div>
 
                     </div>
-                </section>
+                </div>
 
             </motion.section>
         </>

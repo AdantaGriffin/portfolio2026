@@ -10,9 +10,11 @@ function Projects(){
                 viewport={{ once: true, amount: 0.3 }}
                 id="projects" 
                 className={styles.projects}>
+                    
                 <header className={styles.header}>
                     <h4>PROJECTS</h4>
                 </header>
+
                 <div className={styles.projectsContainer}>
                     <h3 className={styles.projectsText}>
                         Some things I've built.
@@ -123,6 +125,7 @@ function Projects(){
                         </li>
                     </ul>
                 </div>
+
             </motion.section>
         </>
     )
