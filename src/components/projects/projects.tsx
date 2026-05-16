@@ -1,6 +1,30 @@
 import styles from './projects.module.scss';
 import {motion} from 'motion/react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 function Projects(){
+
+    type Project = {
+        id: string;
+        title: string;
+        description: string;
+        image:[];
+        languages:[];
+        github: string;
+        site: string;
+
+};
+    const [projects, setProjects] = useState<Project[]>([]);
+    useEffect(() => {
+        async function getProjects(){
+            const response = await fetch('/projects/projects.json');
+            const result = await response.json();
+            //console.log(result.projects);
+            setProjects(result.projects);
+        }
+        getProjects()
+    }, []);    
     return(
         <>
             <motion.section 
@@ -21,7 +45,33 @@ function Projects(){
                     </h3>
                     
                     <ul className={styles.projectsList}>
-                        <li>
+                        {projects?.map(x => (
+                            <li key={x.id}>
+                                <article className={styles.projectArticle}>
+                                    <div className={styles.imageContainer}>
+                                        <img src={x.image[0].main} alt="project image"/>
+                                    </div>
+
+                                    <div className={styles.projectsInfo}>
+                                        <p className={styles.title}>{x.title}</p>
+                                        <p className={styles.description}>{x.desc}</p>
+                                        <div className={styles.langs}>
+                                            {x.languages.map(l => (
+                                                <p className={styles.languages} key={l}>{l}</p>
+                                            ))}
+                                        </div>
+                                        <div className={styles.links}>
+                                            <Link to={x.site} target="_blank"><img className={styles.site} src="/links/laptop.png" height="20px" width="20px"/></Link>
+                                            <p>view details</p>
+                                            <Link to={x.github} target="_blank"><img className={styles.git} src="/links/github.png" height="20px" width="20px"/></Link>
+
+                                        </div>
+                                    </div>
+
+                                </article>
+                            </li>
+                        ))}
+                        {/*<li>
                             <article className={styles.projectArticle}>
                                 <div className={styles.imageContainer}>image container</div>
 
@@ -122,7 +172,7 @@ function Projects(){
                                     </div>
                                 </div>
                             </article>
-                        </li>
+                        </li>*/}
                     </ul>
                 </div>
 
