@@ -42,7 +42,7 @@ function Hero(){
                 id="home" 
                 className={styles.hero}>
                 
-                <div className={styles.rightContainer}>
+                <section className={styles.rightContainer}>
                     <div className={styles.right}>
 
                     <div className={styles.codeContainer}>
@@ -75,9 +75,9 @@ function Hero(){
                     </div>
 
                     </div>
-                </div>
-                
-                <div className={styles.leftContainer}>
+                </section>
+
+                <section className={styles.leftContainer}>
                     <div className={styles.left}>
 
                     <div className={styles.one}>
@@ -104,7 +104,7 @@ function Hero(){
                     </div>
 
                     </div>
-                </div>
+                </section>
 
                 
 
