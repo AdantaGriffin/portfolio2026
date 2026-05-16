@@ -15,7 +15,6 @@
     }
 }
 .hero{
-    padding-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-content: center;
@@ -67,9 +66,10 @@
     }
 
     .right{
-        border: 1px solid red;
             min-height: 88vh;
             align-content: center;
+            position: relative;
+            bottom: 60px;
         .codeContainer{
             box-shadow: 1px 1px 10px lightgrey;
             border-radius: 30px;
