@@ -5,14 +5,21 @@ import { Link } from 'react-router-dom';
 
 function Projects(){
 
+    type ProjectImage = {
+        main: string | null;
+        mobile: string | null;
+        screenshots: string | null;
+        video: string | null;
+    };
+
     type Project = {
         id: string;
         title: string;
-        description: string;
-        image:[];
-        languages:[];
-        github: string;
-        site: string;
+        desc: string;
+        image:ProjectImage;
+        languages:string[];
+        github: string | null;
+        site: string | null;
 
 };
     const [projects, setProjects] = useState<Project[]>([]);
@@ -49,7 +56,7 @@ function Projects(){
                             <li key={x.id}>
                                 <article className={styles.projectArticle}>
                                     <div className={styles.imageContainer}>
-                                        <img src={x.image[0].main} alt="project image"/>
+                                        <img src={x.image.main ?? ""} alt="project image" />
                                     </div>
 
                                     <div className={styles.projectsInfo}>
@@ -61,9 +68,9 @@ function Projects(){
                                             ))}
                                         </div>
                                         <div className={styles.links}>
-                                            <Link to={x.site} target="_blank"><img className={styles.site} src="/links/laptop.png" height="20px" width="20px"/></Link>
+                                            <Link to={x.site ?? ""} target="_blank"><img className={styles.site} src="/links/laptop.png" height="20px" width="20px"/></Link>
                                             <p>view details</p>
-                                            <Link to={x.github} target="_blank"><img className={styles.git} src="/links/github.png" height="20px" width="20px"/></Link>
+                                            <Link to={x.github ?? ""} target="_blank"><img className={styles.git} src="/links/github.png" height="20px" width="20px"/></Link>
 
                                         </div>
                                     </div>
