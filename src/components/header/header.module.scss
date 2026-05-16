@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     align-items: center;
-    height: 15vh;
+    height: 10vh;
     position: absolute;
     top: 0;
     right: 0;
@@ -10,6 +10,7 @@
     z-index: 10;
     padding: 0 20px;
     font-family: "Inter", sans-serif;
+    box-shadow: 1px 1px 10px lightgrey;
     a{
         color: black;
         text-decoration: none;

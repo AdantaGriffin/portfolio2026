@@ -41,36 +41,7 @@ function Hero(){
                 viewport={{ once: true, amount: 0.3 }}
                 id="home" 
                 className={styles.hero}>
-
-                <div className={styles.leftContainer}>
-                    <div className={styles.left}>
-
-                    <div className={styles.one}>
-                        <p>FRONT END DEVELOPER</p>
-                    </div>
-
-                    <div className={styles.two}>
-                        <h2>
-                        I build clean, responsive, web <span className={styles.blue}>experiences.</span>
-                        </h2>
-                    </div>
-
-                    <div className={styles.three}>
-                        <p>Passionate about creating modern, user frinedly websites with clean code and great performance.</p>
-                    </div>
-
-                    <div className={styles.four}>
-                        <Link to="/catalogue" className={styles.profile}>view catalogue</Link>
-                        <HashLink to="/#contact" className={styles.contact}>contact me</HashLink>
-                    </div>
-
-                    <div className={styles.five}>
-                        <p>Let's build something amazing together!</p>
-                    </div>
-
-                    </div>
-                </div>
-
+                
                 <div className={styles.rightContainer}>
                     <div className={styles.right}>
 
@@ -105,6 +76,37 @@ function Hero(){
 
                     </div>
                 </div>
+                
+                <div className={styles.leftContainer}>
+                    <div className={styles.left}>
+
+                    <div className={styles.one}>
+                        <p>FRONT END DEVELOPER</p>
+                    </div>
+
+                    <div className={styles.two}>
+                        <h2>
+                        I build clean, responsive, web <span className={styles.blue}>experiences.</span>
+                        </h2>
+                    </div>
+
+                    <div className={styles.three}>
+                        <p>Passionate about creating modern, user frinedly websites with clean code and great performance.</p>
+                    </div>
+
+                    <div className={styles.four}>
+                        <Link to="/catalogue" className={styles.profile}>view catalogue</Link>
+                        <HashLink to="/#contact" className={styles.contact}>contact me</HashLink>
+                    </div>
+
+                    <div className={styles.five}>
+                        <p>Let's build something amazing together!</p>
+                    </div>
+
+                    </div>
+                </div>
+
+                
 
             </motion.section>
         </>

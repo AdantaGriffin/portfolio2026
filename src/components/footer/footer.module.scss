@@ -1,21 +1,14 @@
 @media only screen and (max-width: 1050px){
-    .footer{
-        display: flex;
-        justify-content: space-between !important;
-    }
-    .footerText{
-        display: block !important;
-    }
-    .footerLinks{
-        display: flex !important;
-    }
 }
 @media only screen and (max-width: 440px){
+    
 }
 .footer{
+    height: 10vh;
     display: flex; 
     justify-content: space-between;
     padding: 0 10px;
+    align-items: center;
     .footerText{
         width: 40%;
         display: flex;
@@ -27,9 +20,14 @@
     .footerLinks{
         list-style: none;
         display: flex;
+        justify-content: space-evenly;
         margin: 0;
         padding: 0;
         height: 100%;
+        width: 200px;
         align-items: center;
+        &:hover{
+            cursor: pointer;
+        }   
     }
 }
