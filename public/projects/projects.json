@@ -12,25 +12,25 @@
                     "video":null
                 } 
             ,
-            "languages":["html3", "sass", "javascript", "react", "typescript"],
+            "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
             "github":"https://github.com/AdantaGriffin/The-Apex",
             "site":"https://apexculture.netlify.app/"
         },
         {
             "id":"project2",
             "title":"Read 4 Speed",
-            "description":null,
+            "desc":"Interactive storytelling platform featuring smooth page navigation and dynamic state management. Stories from multiple genres are fetched through a local API and rendered in a responsive interface. Motion React powers seamless animations and transitions, creating an engaging, polished reading experience across the application.",
             "image":
                 {
-                    "main":null,
+                    "main":"./siteImg/speedDesk.png",
                     "mobile":null,
                     "screenshots":null,
                     "video":null
                 } 
             ,
-            "languages":[],
-            "github":null,
-            "site":null
+            "languages":["html3", "Sass", "JavaScript", "React", "TypeScript", "Motion.js"],
+            "github":"https://github.com/AdantaGriffin/Speed",
+            "site":"https://speedbook.netlify.app/"
         },
         {
             "id":"project3",
