@@ -1,6 +1,5 @@
 import styles from './projects.module.scss';
 import {motion} from 'motion/react';
-import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useApi } from '../api/api';
 
