@@ -6,7 +6,7 @@ function Header(){
     return(
         <>
                 <header className={styles.header}>
-                    <h1><HashLink to="index">AdantaGriffin</HashLink></h1>
+                    <h1><HashLink to="/">AdantaGriffin</HashLink></h1>
                     <Navigation/>
                 </header>
         </>

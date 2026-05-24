@@ -1,0 +1,37 @@
+.projectDetails{
+    height: 100vh;
+}
+.images{
+    height: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    margin: auto;
+
+    .imgDesk, .imgMobile{
+        margin: auto;
+        border-radius: 5px;
+        border: 3px solid silver;
+    }
+    img{
+        height: 200px;
+        max-width: 280px;
+        position: relative;
+        left: 10%;
+    }
+}
+.details{
+    width: 90%;
+    margin: auto;
+    height: 35%;
+    display: grid;
+    grid-template-rows: 20% 10% 45% 25%;
+
+    div, h2{
+        align-content: center;
+    }
+}
+.screenShots{
+    border: 1px solid black;
+    height: 25%;
+}

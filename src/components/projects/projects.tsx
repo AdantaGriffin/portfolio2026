@@ -2,36 +2,10 @@ import styles from './projects.module.scss';
 import {motion} from 'motion/react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useApi } from '../api/api';
 
 function Projects(){
-
-    type ProjectImage = {
-        main: string | null;
-        mobile: string | null;
-        screenshots: string | null;
-        video: string | null;
-    };
-
-    type Project = {
-        id: string;
-        title: string;
-        desc: string;
-        image:ProjectImage;
-        languages:string[];
-        github: string | null;
-        site: string | null;
-
-};
-    const [projects, setProjects] = useState<Project[]>([]);
-    useEffect(() => {
-        async function getProjects(){
-            const response = await fetch('/projects/projects.json');
-            const result = await response.json();
-            //console.log(result.projects);
-            setProjects(result.projects);
-        }
-        getProjects()
-    }, []);    
+    const {projects} = useApi();
     return(
         <>
             <motion.section 
@@ -60,17 +34,17 @@ function Projects(){
                                     </div>
 
                                     <div className={styles.projectsInfo}>
-                                        <p className={styles.title}>{x.title}</p>
-                                        <p className={styles.description}>{x.desc}</p>
+                                        <Link to={`/details/${x.id}`} className={styles.title}>{x.title}</Link>
+                                        <p className={styles.description}>{x.brief}</p>
                                         <div className={styles.langs}>
                                             {x.languages.map(l => (
                                                 <p className={styles.languages} key={l}>{l}</p>
                                             ))}
                                         </div>
                                         <div className={styles.links}>
-                                            <Link to={x.site ?? ""} target="_blank"><img className={styles.site} src="/links/laptop.png" height="20px" width="20px"/></Link>
-                                            <p>view details</p>
-                                            <Link to={x.github ?? ""} target="_blank"><img className={styles.git} src="/links/github.png" height="20px" width="20px"/></Link>
+                                            <Link className={styles.icon} to={x.site ?? ""} target="_blank"><img className={styles.site} src="/links/laptop.png" height="20px" width="20px"/></Link>
+                                            <Link className={styles.viewDetails} to="">view details</Link>
+                                            <Link className={styles.icon} to={x.github ?? ""} target="_blank"><img className={styles.git} src="/links/github.png" height="20px" width="20px"/></Link>
 
                                         </div>
                                     </div>

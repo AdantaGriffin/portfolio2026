@@ -3,11 +3,12 @@
         {
             "id":"project1",
             "title":"The Apex",
+            "brief":"The Apex is a luxury digital art marketplace built with React.",
             "desc":"The Apex is a luxury digital art marketplace built with React. The platform uses React Router for dynamic page rendering, Fetch API for real-time artwork data retrieval, and Motion React to create fluid transitions and interactive animations.",
             "image":
                 {
                     "main":"./siteImg/apexDesk.png",
-                    "mobile":"/siteImg/apexMobile.png",
+                    "mobile":"./siteImg/apexMobile.png",
                     "screenshots":null,
                     "video":null
                 } 
@@ -19,6 +20,7 @@
         {
             "id":"project2",
             "title":"Read 4 Speed",
+            "brief":"Interactive storytelling platform featuring smooth page navigation and dynamic state management. ",
             "desc":"Interactive storytelling platform featuring smooth page navigation and dynamic state management. Stories from multiple genres are fetched through a local API and rendered in a responsive interface. Motion React powers seamless animations and transitions, creating an engaging, polished reading experience across the application.",
             "image":
                 {
@@ -35,7 +37,8 @@
         {
             "id":"project3",
             "title":"",
-            "description":null,
+            "brief":null,
+            "desc":"",
             "image":
                 {
                     "main":null,
