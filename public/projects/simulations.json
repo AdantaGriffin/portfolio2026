@@ -1,0 +1,58 @@
+{
+    "simulations":[
+        {
+            "id":"sim1",
+            "title":"ParamedikDesigns",
+            "brief":null,
+            "desc":null,
+            "image":
+                {
+                    "main":"./siteImg/paraMedikDesk.png",
+                    "mobile":null,
+                    "screenshots":null,
+                    "video":null
+                } 
+            ,
+            "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
+            "github":"https://github.com/AdantaGriffin/medik",
+            "site":"https://param3dik.netlify.app/",
+            "real":"https://www.paramedikdesigns.com/"
+        },
+        {
+            "id":"sim2",
+            "title":"HighburyPub",
+            "brief":null,
+            "desc":null,
+            "image":
+                {
+                    "main":"./siteImg/highburyDesk.png",
+                    "mobile":null,
+                    "screenshots":null,
+                    "video":null
+                } 
+            ,
+            "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
+            "github":"https://github.com/AdantaGriffin/medik",
+            "site":"https://divinespasalon.netlify.app/",
+            "real":"https://divinespasalon.netlify.app/"
+        },
+        {
+            "id":"sim3",
+            "title":"DivineStrength",
+            "brief":null,
+            "desc":null,
+            "image":
+                {
+                    "main":"./siteImg/divineDesk.png",
+                    "mobile":null,
+                    "screenshots":null,
+                    "video":null
+                } 
+            ,
+            "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
+            "github":"https://github.com/AdantaGriffin/divine",
+            "site":"https://highburypub.netlify.app/",
+            "real":"https://www.instagram.com/highburypub/?hl=en"
+        }
+    ]
+}

@@ -18,9 +18,31 @@ import {useState, useEffect, createContext, useContext} from 'react';
         site: string | null;
 
     };
+
+    type SimulationImage = {
+        main: string | null;
+        mobile: string | null;
+        screenshots: string | null;
+        video: string | null;
+    };
+
+    type Simulation = {
+        id: string;
+        title: string;
+        brief: string;
+        desc: string;
+        image:SimulationImage;
+        languages:string[];
+        github: string | null;
+        site: string | null;
+        real: string | null;
+    };
+
     type ApiContextType = {
         projects: Project[];
         setProjects: React.Dispatch<React.SetStateAction<Project[]>>;
+        simulations: Simulation[];
+        setSimulations: React.Dispatch<React.SetStateAction<Simulation[]>>;
     };
 
     const ApiContext = createContext<ApiContextType | null>(null);    
@@ -29,7 +51,6 @@ export function ApiProvider({ children }: { children: React.ReactNode }){
     
     //create all useState and functions here to be exported via API Provider 
     const [projects, setProjects] = useState<Project[]>([]);
-    
     useEffect(() => {
         async function getProjects(){
             const response = await fetch('/projects/projects.json');
@@ -39,11 +60,22 @@ export function ApiProvider({ children }: { children: React.ReactNode }){
         }
         getProjects()
     }, []);
+
+    const [simulations, setSimulations] = useState<Simulation[]>([]);
+    useEffect(() => {
+        async function getSimulations(){
+            const response = await fetch('/projects/simulations.json');
+            const result = await response.json();
+            //console.log(result.simulations);
+            setSimulations(result.simulations)
+        }
+        getSimulations()
+    }, [])
    
 
     return(
         <ApiContext.Provider
-            value={{projects, setProjects }}
+            value={{projects, setProjects, simulations, setSimulations }}
         >
             {children}
         </ApiContext.Provider>

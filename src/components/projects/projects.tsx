@@ -33,7 +33,7 @@ function Projects(){
                                     </div>
 
                                     <div className={styles.projectsInfo}>
-                                        <Link to={`/details/${x.id}`} className={styles.title}>{x.title}</Link>
+                                        <p className={styles.title}>{x.title}</p>
                                         <p className={styles.description}>{x.brief}</p>
                                         <div className={styles.langs}>
                                             {x.languages.map(l => (
@@ -42,7 +42,7 @@ function Projects(){
                                         </div>
                                         <div className={styles.links}>
                                             <Link className={styles.icon} to={x.site ?? ""} target="_blank"><img className={styles.site} src="/links/laptop.png" height="20px" width="20px"/></Link>
-                                            <Link className={styles.viewDetails} to="">view details</Link>
+                                            <Link className={styles.viewDetails} to={`/details/${x.id}`}>view details</Link>
                                             <Link className={styles.icon} to={x.github ?? ""} target="_blank"><img className={styles.git} src="/links/github.png" height="20px" width="20px"/></Link>
 
                                         </div>
