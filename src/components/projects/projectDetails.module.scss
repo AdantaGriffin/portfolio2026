@@ -19,22 +19,57 @@
         border: 3px solid silver;
     }
 }
-
-.details{
-    margin: auto;
-    width: 90%;
-    height: 90%;
+.projectsInfo{
     display: grid;
-    .detailsConflict{
-        .conflicts{
-            margin-bottom: 10px;
+    grid-template-rows: 10% 10% 25% 35% 20%;
+    .detailsTitle{
+        font-size: 28px;
+    }
+    .detailsTitle{
+    }
+    .detailsLanguages{
+        p{
+            display: flex;
+            justify-content: center;
+            color: blue;
+            font-weight: 600;
         }
     }
-    div, h2{
+    .detailDescription{
+        font-size: 13px;
+        height: 100%;
         align-content: center;
+        padding: 0 10px;
+    }
+    .detailsConflict{
+        border: 1px solid lightgrey;
+        padding: 10px;
+        display: grid;
+        align-content: center;
+        .conflicts{
+            font-size: 13px;
+        }
+    }
+    .media{
+        align-content: center;
+        height: fit-content;
+            overflow-x: scroll;
+
+        .mediaList{
+            width: fit-content;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            margin: 0;
+            gap: 10px;
+        }
+
+        .mediaItem{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
     }
 }
-.screenShots{
-    border: 1px solid black;
-    height: 25%;
-}
+

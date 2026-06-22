@@ -14,26 +14,44 @@ function ProjectDetails(){
         <>
             <section className={styles.projectDetails}>
                 <ul className={styles.images}>
+                    
                     <li><img src={`/${filter[0]?.image?.main ?? filter2[0]?.image?.main}`} className={styles.imgDesk} alt="imageDesktop"/></li>
+                    
                     <li><img src={`/${filter[0]?.image?.mobile ?? filter2[0]?.image?.mobile}`} alt="imageMobile"/></li>
+
                 </ul>
 
-                <div className={styles.details}>
+                <div className={styles.projectsInfo}>
 
-                    <h2 className={styles.detailsTitle}>{filter[0]?.title ?? filter2[0]?.title}</h2>
+                    <div>
+                        <h2 className={styles.detailsTitle}>{filter[0]?.title ?? filter2[0]?.title}</h2>
+                        <hr></hr>
+                    </div>
                     
                     <div className={styles.detailsLanguages}>
-                        <div>{filter[0]?.languages.join(" ") ?? filter2[0]?.languages.join(" ") ?? "languages to be"}</div>
-                        <hr></hr>
+                        <p>{filter[0]?.languages.join(" ") ?? filter2[0]?.languages.join(" ") ?? "languages to be"}</p>
                     </div>
+
                     <div>
                         <div className={styles.detailDescription}>{filter[0]?.desc ?? filter2[0]?.desc ?? "description to be"} </div>
-                        <hr></hr>
                     </div>
+
                     <div className={styles.detailsConflict}>
-                        <div className={styles.conflicts}><b>problem :</b> {filter[0]?.challenge ?? filter2[0]?.challenge}</div>
+                        <div className={styles.conflicts}><b style={{fontSize:"16px"}}>Problem :</b> {filter[0]?.challenge ?? filter2[0]?.challenge}</div>
                         <hr></hr>
-                        <div className={styles.conflicts}><b>solution :</b> {filter[0]?.solution ?? filter2[0]?.solution}</div>
+                        <div className={styles.conflicts}><b style={{fontSize:"16px"}}>Solution :</b> {filter[0]?.solution ?? filter2[0]?.solution}</div>
+                    </div>
+
+                    <div className={styles.media}>
+                        <p>video and screenshots:</p>
+                        <ul className={styles.mediaList}>
+                            <li className={styles.mediaItem}>item</li>
+                            <li className={styles.mediaItem}>item</li>
+                            <li className={styles.mediaItem}>item</li>
+                            <li className={styles.mediaItem}>item</li>
+                            <li className={styles.mediaItem}>item</li>
+                            <li className={styles.mediaItem}>item</li>
+                        </ul>
                     </div>
                 </div>
             </section>

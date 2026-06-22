@@ -43,7 +43,7 @@
                 height: 420px;
                 width: 350px;
                 display: grid;
-                grid-template-rows: 50% 50%;
+                grid-template-rows: 60% 40%;
                 border-radius: 10px;
 
                 .imageContainer{
@@ -57,7 +57,7 @@
                 }
                 .projectsInfo{
                     display: grid;
-                    grid-template-rows: 15% 25% 35% 25%;
+                    padding: 5px;
 
                     .langs, .links{
                         display: flex;

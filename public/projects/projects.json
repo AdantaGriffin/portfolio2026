@@ -15,7 +15,9 @@
             ,
             "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
             "github":"https://github.com/AdantaGriffin/The-Apex",
-            "site":"https://apexculture.netlify.app/"
+            "site":"https://apexculture.netlify.app/",
+            "challenge":"The challenge was cataloging the world's most expensive collector items while maintaining an intuitive user experience.",
+            "solution":"Using React Router DOM's dynamic routing enabled seamless navigation and efficient rendering of individual collection pages."
         },
         {
             "id":"project2",
@@ -32,7 +34,9 @@
             ,
             "languages":["html3", "Sass", "JavaScript", "React", "TypeScript", "Motion.js"],
             "github":"https://github.com/AdantaGriffin/Speed",
-            "site":"https://speedbook.netlify.app/"
+            "site":"https://speedbook.netlify.app/",
+            "challenge":"The challenge was building a platform that helps users improve reading speed.",
+            "solution":"Using React Router DOM's useParams and state management, short stories were dynamically rendered from an API at adjustable speeds."
         },
         {
             "id":"project3",
@@ -49,7 +53,9 @@
             ,
             "languages":[],
             "github":null,
-            "site":null
+            "site":null,
+            "challenge":"",
+            "solution":""
         },
         {
             "id":"project4",
@@ -65,7 +71,9 @@
             ,
             "languages":[],
             "github":null,
-            "site":null
+            "site":null,
+            "challenge":"",
+            "solution":""
         },
         {
             "id":"project5",
@@ -81,7 +89,9 @@
             ,
             "languages":[],
             "github":null,
-            "site":null
+            "site":null,
+            "challenge":"",
+            "solution":""
         }
     ]
 }

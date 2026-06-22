@@ -25,6 +25,7 @@ function Simulations(){
                         {simulations.map(x => (
                             <li key={x.id}>
                                 <article className={styles.simulationsArticle}>
+                                    
                                     <div className={styles.simulationsInfo}>
                                         <div className={styles.siteTitle}>
                                             <Link to={`/details/${x.id}`} className={styles.title}>{x.title}</Link>
