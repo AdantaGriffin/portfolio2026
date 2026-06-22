@@ -57,12 +57,14 @@
                 }
                 .projectsInfo{
                     display: grid;
+                    grid-template-rows: 25% 50% 25%;
                     padding: 5px;
 
                     .langs, .links{
                         display: flex;
                         justify-content: space-evenly;
                         align-items: center;
+                        line-height: 1.4;
                     }
                     .langs{
                         width: 90%;
@@ -78,6 +80,7 @@
                     .languages{
                         font-size: 14px;
                         color: rgb(2, 87, 245, 1);
+                        margin: 2.5px;
                     }
                     .links{
                         align-content: center;
