@@ -35,14 +35,13 @@ function Hero(){
     return(
         <>
             <motion.section 
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: -50 }}
-                transition={{ duration: 1.5 }}
-                viewport={{ once: true, amount: 0.3 }}
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration: 1.2}}
                 id="home" 
                 className={styles.hero}>
                 
-                <section className={styles.rightContainer}>
+                <motion.section className={styles.rightContainer}>
                     <div className={styles.right}>
 
                     <div className={styles.codeContainer}>
@@ -75,36 +74,71 @@ function Hero(){
                     </div>
 
                     </div>
-                </section>
+                </motion.section>
 
-                <section className={styles.leftContainer}>
+                <motion.section
+                initial={{opacity: 0}}
+                whileInView={{opacity: 1}}
+                transition={{duration: 2.2}}
+                viewport={{ once: true, amount: 0.3 }}
+                className={styles.leftContainer}
+                >
                     <div className={styles.left}>
 
                     <div className={styles.one}>
-                        <p>FRONT END DEVELOPER</p>
+                        <motion.p
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 5.2}}
+                        viewport={{ once: true, amount: 0.3 }}
+                        >
+                            FRONT END DEVELOPER
+                        </motion.p>
                     </div>
 
                     <div className={styles.two}>
-                        <h2>
+                        <motion.h2
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 5.2}}
+                        viewport={{ once: true, amount: 0.3 }}
+                        >
                         I build clean, responsive, web <span className={styles.blue}>experiences.</span>
-                        </h2>
+                        </motion.h2>
                     </div>
 
                     <div className={styles.three}>
-                        <p>Passionate about creating modern, user frinedly websites with clean code and great performance.</p>
+                        <motion.p
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{duration: 6.2}}
+                        viewport={{ once: true, amount: 0.3 }}
+                        >
+                            Passionate about creating modern, user frinedly websites with clean code and great performance.
+                        </motion.p>
                     </div>
 
-                    <div className={styles.four}>
+                    <motion.div
+                    initial={{opacity: 0}}
+                    whileInView={{opacity: 1}}
+                    transition={{duration: 7.2}}
+                    viewport={{ once: true, amount: 0.3 }} 
+                    className={styles.four}>
                         <Link to="/catalogue" className={styles.profile}>view catalogue</Link>
                         <HashLink to="/#contact" className={styles.contact}>contact me</HashLink>
-                    </div>
+                    </motion.div>
 
-                    <div className={styles.five}>
+                    <motion.div
+                    initial={{opacity: 0, x: -100}}
+                    whileInView={{opacity: 1, x: 0}}
+                    transition={{duration: 8.2}}
+                    viewport={{ once: true, amount: 0.3 }} 
+                    className={styles.five}>
                         <p>Let's build something amazing together!</p>
-                    </div>
+                    </motion.div>
 
                     </div>
-                </section>
+                </motion.section>
 
                 
 

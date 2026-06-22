@@ -5,10 +5,13 @@
             "title":"ParamedikDesigns",
             "brief":null,
             "desc":null,
+            "challenge":"",
+            "solution":"",
+            "result":"",
             "image":
                 {
                     "main":"./siteImg/paraMedikDesk.png",
-                    "mobile":null,
+                    "mobile":"./siteImg/paraMedikMobile.jpg",
                     "screenshots":null,
                     "video":null
                 } 
@@ -23,10 +26,13 @@
             "title":"HighburyPub",
             "brief":null,
             "desc":null,
+            "challenge":"",
+            "solution":"",
+            "result":"",
             "image":
                 {
                     "main":"./siteImg/highburyDesk.png",
-                    "mobile":null,
+                    "mobile":"./siteImg/highburyMobile.jpg",
                     "screenshots":null,
                     "video":null
                 } 
@@ -41,17 +47,20 @@
             "title":"DivineStrength",
             "brief":null,
             "desc":null,
+            "challenge":"This project focused on elevating the structure and visual style of a Wix Create website, transforming the experience into a more refined, engaging, and polished digital presence while improving overall layout, hierarchy, and aesthetic consistency.",
+            "solution":"",
+            "result":"",
             "image":
                 {
                     "main":"./siteImg/divineDesk.png",
-                    "mobile":null,
+                    "mobile":"./siteImg/divineMobile.jpg",
                     "screenshots":null,
                     "video":null
                 } 
             ,
             "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
             "github":"https://github.com/AdantaGriffin/divine",
-            "site":"https://highburypub.netlify.app/",
+            "site":"https://divinespasalon.netlify.app/",
             "real":"https://www.instagram.com/highburypub/?hl=en"
         }
     ]

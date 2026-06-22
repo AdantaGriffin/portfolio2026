@@ -1,32 +1,35 @@
 .projectDetails{
-    height: 100vh;
+    height: 90vh;
+    display: grid;
+    grid-template-rows: 30% 70%;
+    padding: 10px;
 }
 .images{
-    height: 40%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 600px;
-    margin: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
-    .imgDesk, .imgMobile{
-        margin: auto;
-        border-radius: 5px;
-        border: 3px solid silver;
-    }
     img{
         height: 200px;
         max-width: 280px;
-        position: relative;
-        left: 10%;
+        border-radius: 15px;
+        border: 3px solid silver;
     }
 }
-.details{
-    width: 90%;
-    margin: auto;
-    height: 35%;
-    display: grid;
-    grid-template-rows: 20% 10% 45% 25%;
 
+.details{
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    display: grid;
+    .detailsConflict{
+        .conflicts{
+            margin-bottom: 10px;
+        }
+    }
     div, h2{
         align-content: center;
     }

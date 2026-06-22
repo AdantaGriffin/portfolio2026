@@ -25,7 +25,7 @@
             "image":
                 {
                     "main":"./siteImg/speedDesk.png",
-                    "mobile":null,
+                    "mobile":"./siteImg/speedMobile.jpg",
                     "screenshots":null,
                     "video":null
                 } 
