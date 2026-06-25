@@ -43,35 +43,40 @@ function Hero(){
                 
                 <section className={styles.rightContainer}>
                     <div className={styles.right}>
+                        <div className={styles.topCodeContainer}>
+                            <div id={styles.red} className={styles.buttons}></div>
+                            <div id={styles.yellow} className={styles.buttons}></div>
+                            <div id={styles.green} className={styles.buttons}></div>
+                        </div>
+                        <div className={styles.botCodeContainer}>
 
-                    <div className={styles.codeContainer}>
-                        <div className={styles.containerTop}>
-                            <div className={styles.containerButtons}>
-                                <div className={styles.dot} id={styles.red}>
-                                    
-                                </div>
+                            <div className={styles.containerTop}>
+                                <div className={styles.containerButtons}>
+                                    <div className={styles.dot} id={styles.red}>
 
-                                <div className={styles.dot} id={styles.yellow}>
-                                    
-                                </div>
+                                    </div>
 
-                                <div className={styles.dot} id={styles.green}>
-                                    
+                                    <div className={styles.dot} id={styles.yellow}>
+
+                                    </div>
+
+                                    <div className={styles.dot} id={styles.green}>
+
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div className={styles.containerBottom}>
-                            <div>
-                                <pre>
-<code>
-    {displayText}
-</code>
-                                </pre>
+                            <div className={styles.containerBottom}>
+                                <div>
+                                    <pre>
+                                        <code>
+                                            {displayText}
+                                        </code>
+                                    </pre>
+                                </div>
                             </div>
-                        </div>
 
-                    </div>
+                        </div>
 
                     </div>
                 </section>
@@ -79,36 +84,35 @@ function Hero(){
                 <section className={styles.leftContainer}>
                     <div className={styles.left}>
 
-                    <div className={styles.one}>
-                        <p>
-                            FRONT END DEVELOPER
-                        </p>
-                    </div>
+                        <div className={styles.one}>
+                            <p>
+                                FRONT END DEVELOPER
+                            </p>
+                        </div>
 
-                    <div className={styles.two}>
-                        <h2>
-                        I build clean, responsive, web <span className={styles.blue}>experiences.</span>
-                        </h2>
-                    </div>
+                        <div className={styles.two}>
+                            <h2>
+                            I build clean, responsive, web <span className={styles.blue}>experiences.</span>
+                            </h2>
+                        </div>
 
-                    <div className={styles.three}>
-                        <p>
-                            Passionate about creating modern, user frinedly websites with clean code and great performance.
-                        </p>
-                    </div>
+                        <div className={styles.three}>
+                            <p>
+                                Passionate about creating modern, user frinedly websites with clean code and great performance.
+                            </p>
+                        </div>
 
-                    <div
-                    className={styles.four}>
-                        <Link to="/catalogue" className={styles.profile}>view catalogue</Link>
-                        <HashLink to="/#contact" className={styles.contact}>contact me</HashLink>
-                    </div>
+                        <div className={styles.four}>
+                                <Link to="/catalogue" className={styles.profile}>view catalogue</Link>
+                            <HashLink to="/#contact" className={styles.contact}>contact me</HashLink>
+                        </div>
 
-                    <div
-                    className={styles.five}>
-                        <p>Let's build something amazing together!</p>
-                    </div>
+                        <div className={styles.five}>
+                            <p>Let's build something amazing together!</p>
+                        </div>
 
                     </div>
+
                 </section>
 
                 
