@@ -7,7 +7,7 @@ function About(){
             <motion.section 
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1}}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 2.6 }}
                 viewport={{ once: true, amount: 0.3 }}
 
                 id="about" 

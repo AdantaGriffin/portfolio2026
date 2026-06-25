@@ -4,7 +4,7 @@
     }
 }
 .projects{
-    min-height: 88vh;
+    min-height: 91vh;
     width: 90%;
     margin: auto;
 
@@ -13,6 +13,14 @@
         color: rgba(2, 87, 245, 1);
     }
     .projectsContainer{
+        position: relative;
+        top: 50px;
+        .projectsText{
+            h3{
+                font-size: 26px;
+            }
+
+        }
         .projectsList{
                 padding: 5px;
             &::-webkit-scrollbar{

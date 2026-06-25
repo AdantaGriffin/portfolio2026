@@ -37,11 +37,11 @@ function Hero(){
             <motion.section 
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
-                transition={{duration: 1.2}}
+                transition={{duration: 2.6}}
                 id="home" 
                 className={styles.hero}>
                 
-                <motion.section className={styles.rightContainer}>
+                <section className={styles.rightContainer}>
                     <div className={styles.right}>
 
                     <div className={styles.codeContainer}>
@@ -74,71 +74,42 @@ function Hero(){
                     </div>
 
                     </div>
-                </motion.section>
+                </section>
 
-                <motion.section
-                initial={{opacity: 0}}
-                whileInView={{opacity: 1}}
-                transition={{duration: 2.2}}
-                viewport={{ once: true, amount: 0.3 }}
-                className={styles.leftContainer}
-                >
+                <section className={styles.leftContainer}>
                     <div className={styles.left}>
 
                     <div className={styles.one}>
-                        <motion.p
-                        initial={{opacity: 0}}
-                        whileInView={{opacity: 1}}
-                        transition={{duration: 5.2}}
-                        viewport={{ once: true, amount: 0.3 }}
-                        >
+                        <p>
                             FRONT END DEVELOPER
-                        </motion.p>
+                        </p>
                     </div>
 
                     <div className={styles.two}>
-                        <motion.h2
-                        initial={{opacity: 0}}
-                        whileInView={{opacity: 1}}
-                        transition={{duration: 5.2}}
-                        viewport={{ once: true, amount: 0.3 }}
-                        >
+                        <h2>
                         I build clean, responsive, web <span className={styles.blue}>experiences.</span>
-                        </motion.h2>
+                        </h2>
                     </div>
 
                     <div className={styles.three}>
-                        <motion.p
-                        initial={{opacity: 0}}
-                        whileInView={{opacity: 1}}
-                        transition={{duration: 6.2}}
-                        viewport={{ once: true, amount: 0.3 }}
-                        >
+                        <p>
                             Passionate about creating modern, user frinedly websites with clean code and great performance.
-                        </motion.p>
+                        </p>
                     </div>
 
-                    <motion.div
-                    initial={{opacity: 0}}
-                    whileInView={{opacity: 1}}
-                    transition={{duration: 7.2}}
-                    viewport={{ once: true, amount: 0.3 }} 
+                    <div
                     className={styles.four}>
                         <Link to="/catalogue" className={styles.profile}>view catalogue</Link>
                         <HashLink to="/#contact" className={styles.contact}>contact me</HashLink>
-                    </motion.div>
+                    </div>
 
-                    <motion.div
-                    initial={{opacity: 0, x: -100}}
-                    whileInView={{opacity: 1, x: 0}}
-                    transition={{duration: 8.2}}
-                    viewport={{ once: true, amount: 0.3 }} 
+                    <div
                     className={styles.five}>
                         <p>Let's build something amazing together!</p>
-                    </motion.div>
+                    </div>
 
                     </div>
-                </motion.section>
+                </section>
 
                 
 

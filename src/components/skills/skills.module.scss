@@ -5,18 +5,25 @@
     }
 }
 .skills{
-    min-height: 88vh;
+    min-height: 91vh;
 
     .header{
         text-align: center;
         color: rgba(2, 87, 245, 1);
+        h3{
+            font-size: 26px;
+        }
     }
 
     .skillsContainer{
         width: 90%;
         margin: auto;
-
+        h3{
+            font-size: 26px;
+        }
         .skillList{
+            position: relative;
+            top: 50px;
             display: flex;
             flex-wrap: wrap;
             list-style: none;
@@ -26,8 +33,11 @@
             margin: auto;
             gap: 10px;
             justify-content: space-evenly;
-            li{
-                min-width: 200px;
+            gap: 20px;
+            .listHead{
+                min-width: 150px;
+                height: 200px;
+                border: 1px solid black;
             }
             
             .listHead p{
@@ -42,6 +52,8 @@
             text-align: center;
             li{
                 font-weight: 400 !important;
+                line-height: 1.7;
+                font-size: 14px;
             }
         }
     }

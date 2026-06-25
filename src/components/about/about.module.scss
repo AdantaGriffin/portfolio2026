@@ -1,4 +1,8 @@
 @media only screen and (max-width: 1050px){
+    .aboutAttributes{
+        position: relative;
+        top: 30px !important;
+    }
     .attributes{
         display: block !important;
         text-align: center;
@@ -11,10 +15,8 @@ h4{
     position: relative;
     top: 10px;
 }
-h3{
-    font-size: 45px;
-}
 .about{
+    min-height: 91vh;
     width: 90%;
     margin: auto;
     header{
@@ -23,17 +25,36 @@ h3{
     }
 
     .aboutContainer{
+        .aboutText{
+            h3{
+                font-size: 26px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
     }
 
     .aboutAttributes{
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+        top: 130px;
 
         .attributes{
             width: 45%;
             display: grid;
             grid-template-columns: 1fr 2fr;
             align-items: center;
+
+            .attributesData{
+                h5{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 14px;
+                }
+            }
         }
     }
 }

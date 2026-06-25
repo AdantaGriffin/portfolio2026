@@ -10,7 +10,7 @@ function Projects(){
             <motion.section 
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1}}
-                transition={{ duration: 1.5 }}
+                transition={{ duration: 2.6 }}
                 viewport={{ once: true, amount: 0.3 }}
                 id="projects" 
                 className={styles.projects}>
@@ -20,9 +20,12 @@ function Projects(){
                 </header>
 
                 <div className={styles.projectsContainer}>
-                    <h3 className={styles.projectsText}>
+
+                    <div className={styles.projectsText}>
+                        <h3 className={styles.projectsText}>
                         Some things I've built.
-                    </h3>
+                        </h3>
+                    </div>
                     
                     <ul className={styles.projectsList}>
                         {projects?.map(x => (
@@ -160,6 +163,7 @@ function Projects(){
                             </article>
                         </li>*/}
                     </ul>
+
                 </div>
 
             </motion.section>

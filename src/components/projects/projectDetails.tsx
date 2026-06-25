@@ -1,7 +1,7 @@
 import styles from './projectDetails.module.scss';
 import { useParams } from 'react-router-dom';
 import { useApi } from '../api/api';
-
+import {motion} from 'motion/react';
 function ProjectDetails(){
     const {projects, simulations} = useApi();
     const {id} = useParams();
@@ -16,7 +16,12 @@ function ProjectDetails(){
     console.log(data)
     return(
         <>
-            <section className={styles.projectDetails}>
+            <motion.section 
+            initial={{ opacity: 0}}
+            whileInView={{ opacity: 1}}
+            transition={{ duration: 2.6 }}
+            viewport={{ once: true, amount: 0.3 }}
+             className={styles.projectDetails}>
                 <ul className={styles.images}>
                     
                     <li><img src={`/${filter[0]?.image?.main ?? filter2[0]?.image?.main}`} className={styles.imgDesk} alt="imageDesktop"/></li>
@@ -64,7 +69,7 @@ function ProjectDetails(){
                         </ul>
                     </div>
                 </div>
-            </section>
+            </motion.section>
         </>
     )
 };

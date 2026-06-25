@@ -8,9 +8,9 @@ function Simulations(){
     return(
         <>
             <motion.section
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2 }}
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                transition={{ duration: 2.6 }}
                 viewport={{ once: true, amount: 0.3 }} 
                 id="simulations"
                 className={styles.simulations}>

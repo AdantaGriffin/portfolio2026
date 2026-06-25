@@ -14,22 +14,27 @@
         }
     }
 }
+
 .hero{
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    min-height: 91vh;
     align-content: center;
 
     h2{
-        font-size: 50px;
+        font-size: 40px;
     }
     p{
-        font-size: 18px;
+        font-size: 16px;
     }
+
     .left{
-        min-height: 88vh;
         align-content: center;
         width: 70%;
         margin: auto;
+        min-height: 91vh;
 
         .one{
             width: 250px;
@@ -66,10 +71,8 @@
     }
 
     .right{
-            min-height: 88vh;
-            align-content: center;
-            position: relative;
-            bottom: 60px;
+        min-height: 91vh;
+        align-content: center;
         .codeContainer{
             box-shadow: 1px 1px 10px lightgrey;
             border-radius: 30px;
@@ -119,7 +122,5 @@
                 }
             }
         }
-    }
-    .leftContainer{
     }
 }

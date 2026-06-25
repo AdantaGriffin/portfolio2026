@@ -12,9 +12,9 @@ function Footer(){
                     
                     <div>
                         <ul className={styles.footerLinks}>
-                            <li><img src="/links/linkedin.png" height="20px" width="20px" alt="soclink"/></li>
-                            <li><img src="/links/github.png" height="20px" width="20px" alt="soclink"/></li>
-                            <li><img src="/links/instagram.png" height="20px" width="20px"  alt="soclink"/></li>
+                            <li><a href="" target="_blank"><img src="/links/linkedin.png" height="20px" width="20px" alt="soclink"/></a></li>
+                            <li><a href="https://github.com/AdantaGriffin" target="_blank"><img src="/links/github.png" height="20px" width="20px" alt="soclink"/></a></li>
+                            <li><a href="" target="_blank"><img src="/links/instagram.png" height="20px" width="20px"  alt="soclink"/></a></li>
                         </ul>
                     </div>
                 </footer>
