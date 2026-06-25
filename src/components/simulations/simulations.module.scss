@@ -5,7 +5,11 @@
         width: 300px !important;
         .simulationsInfo{
             height: 160px;
-
+            .siteTitle{
+                text-align: center;
+                position: relative;
+                right: 35px;
+            }
             .title{
                 position: relative;
                 left: 12%;
@@ -93,6 +97,9 @@
                     border-radius: 20px;
                     padding: 10px;
 
+                    .siteTitle{
+                        text-align: center;
+                    }
                     .siteInfo{
                         display: flex;
                         justify-content: space-between;
