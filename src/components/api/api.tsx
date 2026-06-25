@@ -3,7 +3,7 @@ import {useState, useEffect, createContext, useContext} from 'react';
     type ProjectImage = {
         main: string | null;
         mobile: string | null;
-        screenshots: string | null;
+        screenshots: [];
         video: string | null;
     };
 
@@ -24,7 +24,7 @@ import {useState, useEffect, createContext, useContext} from 'react';
     type SimulationImage = {
         main: string | null;
         mobile: string | null;
-        screenshots: string | null;
+        screenshots: [];
         video: string | null;
     };
 

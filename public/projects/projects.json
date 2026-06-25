@@ -9,8 +9,8 @@
                 {
                     "main":"./siteImg/apexDesk.png",
                     "mobile":"./siteImg/apexMobile.png",
-                    "screenshots":null,
-                    "video":null
+                    "screenshots":["./siteImg/apexss1.png", "./siteImg/apexss2.png", "./siteImg/apexss3.png"],
+                    "video":"/siteImg/apexVid.mp4"
                 } 
             ,
             "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
@@ -28,8 +28,8 @@
                 {
                     "main":"./siteImg/speedDesk.png",
                     "mobile":"./siteImg/speedMobile.jpg",
-                    "screenshots":null,
-                    "video":null
+                    "screenshots":["./siteImg/speedss1.png", "./siteImg/speedss2.png", "./siteImg/speedss3.png"],
+                    "video":"/siteImg/speedVid.mp4"
                 } 
             ,
             "languages":["html3", "Sass", "JavaScript", "React", "TypeScript", "Motion.js"],

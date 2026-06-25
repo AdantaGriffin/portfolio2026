@@ -8,8 +8,12 @@ function ProjectDetails(){
     const filter = projects.filter(x => x.id === id);
     const filter2 = simulations.filter(x => x.id === id);
     //console.log(filter[0]?.image.main)
-    console.log(filter)
-    console.log(filter2)
+    //console.log(filter)
+    //console.log(filter2)
+    const videoSrc = filter[0]?.image?.video ?? filter2[0]?.image?.video ?? undefined;
+    //console.log(videoSrc)
+    const data = filter.length > 0 ? filter : filter2;
+    console.log(data)
     return(
         <>
             <section className={styles.projectDetails}>
@@ -45,12 +49,18 @@ function ProjectDetails(){
                     <div className={styles.media}>
                         <p>video and screenshots:</p>
                         <ul className={styles.mediaList}>
-                            <li className={styles.mediaItem}>item</li>
-                            <li className={styles.mediaItem}>item</li>
-                            <li className={styles.mediaItem}>item</li>
-                            <li className={styles.mediaItem}>item</li>
-                            <li className={styles.mediaItem}>item</li>
-                            <li className={styles.mediaItem}>item</li>
+                            <li className={styles.mediaItem}>
+                                <video
+                                autoPlay
+                                muted
+                                loop
+                                playsInline
+                                src={videoSrc}
+                                className={styles.mediaSrc}></video>
+                            </li>
+                            {data[0]?.image?.screenshots.map(x => (
+                                <li className={styles.mediaItem}><img src={`/${x}`}/></li>
+                            ))}
                         </ul>
                     </div>
                 </div>
