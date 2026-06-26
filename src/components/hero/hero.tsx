@@ -1,7 +1,6 @@
 import styles from './hero.module.scss';
 import {useState, useEffect} from 'react'; 
 import { animate, motion } from "motion/react";
-import { Link } from 'react-router-dom';
 import {HashLink} from 'react-router-hash-link';
 
 function Hero(){
