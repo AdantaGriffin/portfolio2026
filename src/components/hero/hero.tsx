@@ -103,7 +103,7 @@ function Hero(){
                         </div>
 
                         <div className={styles.four}>
-                                <Link to="/catalogue" className={styles.profile}>view catalogue</Link>
+                                <HashLink to="/#projects" className={styles.profile}>view work</HashLink>
                             <HashLink to="/#contact" className={styles.contact}>contact me</HashLink>
                         </div>
 

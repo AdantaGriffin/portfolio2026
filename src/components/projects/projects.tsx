@@ -163,6 +163,7 @@ function Projects(){
                             </article>
                         </li>*/}
                     </ul>
+                    <Link to="/catalogue">view more</Link>
 
                 </div>
 

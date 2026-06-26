@@ -32,7 +32,7 @@ function Contact(){
                     <div className={styles.contactLinks}>
                         <div>
                             <h5>Email Me</h5>
-                            <a href="mailto:adantag@gmailcom">email@gmail.com</a>
+                            <a href="mailto:griffinadanta90@gmailcom">griffinadanta90@gmail.com</a>
                         </div>
                         <div>
                             <h5>Phone</h5>

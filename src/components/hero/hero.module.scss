@@ -1,6 +1,24 @@
+@use '../mixins' as *;
+
 @media only screen and (max-width: 1050px){
     .right{
         width: 390px !important;
+
+        .botCodeContainer{
+                padding: 0 10px;
+
+                code{
+                    position: relative !important;
+                    left: 30px !important;
+                    top: 15px !important;
+                }
+            }
+    }
+    .four{
+        border: 5px solid white;
+        align-items: center !important;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
 .hero{
@@ -42,6 +60,12 @@
 
             .botCodeContainer{
                 padding: 0 10px;
+
+                code{
+                    position: relative;
+                    left: 120px;
+                    top: 20px;
+                }
             }
         }
     }
@@ -51,7 +75,7 @@
         align-content: center;
 
         .left{
-            height: 400px;
+            height: 550px;
             width: 400px;
             margin: auto;
             display: grid;
@@ -65,12 +89,15 @@
             }
             .two{
                 h2{
-                    font-size: 26px
+                    font-size: 40px
                 }
             }
             .four{
                 display: flex;
                 justify-content: space-evenly;
+                a{
+                    @include button;
+                }
             }
         }
     }

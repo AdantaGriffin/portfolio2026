@@ -9,8 +9,8 @@ function Navigation(){
                 <ul className={styles.navigationList}>
                     <li><HashLink to="/#home">Home</HashLink></li>
                     <li><HashLink to="/#about">About</HashLink></li>
-                    <li><HashLink to="/#projects">Projects</HashLink></li>
                     <li><HashLink to="/#skills">Skills</HashLink></li>
+                    <li><HashLink to="/#projects">Projects</HashLink></li>
                     <li><HashLink to="/#simulations">Simulations</HashLink></li>
                     <li><HashLink to="/#contact">Contact</HashLink></li>
                     <li className={styles.resume}><Link to="/resume">Resume</Link></li>

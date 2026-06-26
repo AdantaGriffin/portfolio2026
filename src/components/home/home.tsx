@@ -14,8 +14,8 @@ function Home(){
         <section className={styles.app}>
           <Hero/>
           <About/>
-          <Projects/>
           <Skills/>
+          <Projects/>
           <Simulations/>
           <Contact/>
           <Footer/>

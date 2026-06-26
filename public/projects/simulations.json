@@ -5,15 +5,15 @@
             "title":"ParamedikDesigns",
             "brief":null,
             "desc":null,
-            "challenge":"",
-            "solution":"",
+            "challenge":"To create a fully responsive layout that provides a seamless and intuitive user experience across desktop, tablet, and mobile devices.",
+            "solution":"Designed and implemented responsive layouts using CSS/Sass media queries, adjusting grids, spacing, typography, and navigation to maintain usability across desktop, tablet, and mobile viewports. ",
             "result":"",
             "image":
                 {
                     "main":"./siteImg/paraMedikDesk.png",
                     "mobile":"./siteImg/paraMedikMobile.jpg",
-                    "screenshots":null,
-                    "video":null
+                    "screenshots":[],
+                    "video":""
                 } 
             ,
             "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
@@ -33,14 +33,14 @@
                 {
                     "main":"./siteImg/highburyDesk.png",
                     "mobile":"./siteImg/highburyMobile.jpg",
-                    "screenshots":null,
-                    "video":null
+                    "screenshots":[],
+                    "video":""
                 } 
             ,
             "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
-            "github":"https://github.com/AdantaGriffin/medik",
-            "site":"https://divinespasalon.netlify.app/",
-            "real":"https://divinespasalon.netlify.app/"
+            "github":"https://github.com/AdantaGriffin/highburyPub",
+            "site":"https://highburypub.netlify.app/",
+            "real":"https://www.instagram.com/highburypub/?hl=en"
         },
         {
             "id":"sim3",
@@ -54,14 +54,14 @@
                 {
                     "main":"./siteImg/divineDesk.png",
                     "mobile":"./siteImg/divineMobile.jpg",
-                    "screenshots":null,
-                    "video":null
+                    "screenshots":[],
+                    "video":""
                 } 
             ,
             "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
             "github":"https://github.com/AdantaGriffin/divine",
             "site":"https://divinespasalon.netlify.app/",
-            "real":"https://www.instagram.com/highburypub/?hl=en"
+            "real":""
         }
     ]
 }

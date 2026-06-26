@@ -43,11 +43,30 @@ import {useState, useEffect, createContext, useContext} from 'react';
         real: string | null;
     };
 
+    type CatalogueImage = {
+        main: string | null;
+        mobile: string | null;
+        screenshots: [];
+        video: string | null;
+    };
+
+    type Catalogue = {
+        id: string;
+        title: string;
+        brief: string;
+        image:CatalogueImage;
+        languages:string[];
+        github: string | null;
+        site: string | null;
+    };
+
     type ApiContextType = {
         projects: Project[];
         setProjects: React.Dispatch<React.SetStateAction<Project[]>>;
         simulations: Simulation[];
         setSimulations: React.Dispatch<React.SetStateAction<Simulation[]>>;
+        catalogue: Catalogue[];
+        setCatalogue: React.Dispatch<React.SetStateAction<Catalogue[]>>;
     };
 
     const ApiContext = createContext<ApiContextType | null>(null);    
@@ -75,12 +94,23 @@ export function ApiProvider({ children }: { children: React.ReactNode }){
             setSimulations(result.simulations)
         }
         getSimulations()
-    }, [])
+    }, []);
+
+    const [catalogue, setCatalogue] = useState<Catalogue[]>([]);
+    useEffect(() => {
+        async function getCatalogue(){
+            const response = await fetch('/projects/catalogue.json');
+            const result = await response.json();
+            //console.log(result)
+            setCatalogue(result.catalogue)
+        }
+        getCatalogue()
+    }, []);
    
 
     return(
         <ApiContext.Provider
-            value={{projects, setProjects, simulations, setSimulations }}
+            value={{projects, setProjects, simulations, setSimulations, catalogue, setCatalogue }}
         >
             {children}
         </ApiContext.Provider>

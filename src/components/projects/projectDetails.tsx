@@ -64,7 +64,7 @@ function ProjectDetails(){
                                 className={styles.mediaSrc}></video>
                             </li>
                             {data[0]?.image?.screenshots.map(x => (
-                                <li className={styles.mediaItem}><img src={`/${x}`}/></li>
+                                <li key={x} className={styles.mediaItem}><img src={`/${x}`}/></li>
                             ))}
                         </ul>
                     </div>

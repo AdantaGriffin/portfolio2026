@@ -16,8 +16,8 @@
             "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
             "github":"https://github.com/AdantaGriffin/The-Apex",
             "site":"https://apexculture.netlify.app/",
-            "challenge":"The challenge was cataloging the world's most expensive collector items while maintaining an intuitive user experience.",
-            "solution":"Using React Router DOM's dynamic routing enabled seamless navigation and efficient rendering of individual collection pages."
+            "challenge":"Designing an intuitive interface capable of showcasing a curated collection of high-value digital artwork while ensuring seamless navigation and an engaging user experience.",
+            "solution":"Implemented dynamic routing with React Router DOM to generate individual collection pages, enabling seamless navigation, efficient content rendering, and a scalable application structure.."
         },
         {
             "id":"project2",
@@ -35,8 +35,8 @@
             "languages":["html3", "Sass", "JavaScript", "React", "TypeScript", "Motion.js"],
             "github":"https://github.com/AdantaGriffin/Speed",
             "site":"https://speedbook.netlify.app/",
-            "challenge":"The challenge was building a platform that helps users improve reading speed.",
-            "solution":"Using React Router DOM's useParams and state management, short stories were dynamically rendered from an API at adjustable speeds."
+            "challenge":"Designing an engaging reading platform that helps users improve their reading speed while maintaining accuracy, focus, and an intuitive user experience.",
+            "solution":"Built a dynamic reading interface using React Router DOM, React state management, and the Fetch API to load stories from a local JSON source while supporting customizable speed controls for an engaging user experience.."
         },
         {
             "id":"project3",

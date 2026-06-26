@@ -2,30 +2,30 @@
     "catalogue":[
         {
             "id":"cat1",
-            "title":null,
+            "title":"Appointment Planer",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
-            "languages":[null],
+            "languages":[""],
             "github":null,
             "site":null
 
         },
         {
             "id":"cat2",
-            "title":null,
+            "title":"Super Animal Facts",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
@@ -36,13 +36,13 @@
         },
         {
             "id":"cat3",
-            "title":null,
+            "title":"Rock Paper Scissor",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
@@ -53,13 +53,13 @@
         },
         {
             "id":"cat4",
-            "title":null,
+            "title":"Saucy Menu",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
@@ -70,13 +70,13 @@
         },
         {
             "id":"cat5",
-            "title":null,
+            "title":"JaMMMing",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
@@ -87,30 +87,13 @@
         },
         {
             "id":"cat6",
-            "title":null,
+            "title":"Music Preview",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
-                    "video":null
-                } 
-            ,
-            "languages":[null],
-            "github":null,
-            "site":null
-
-        },
-        {
-            "id":"cat7",
-            "title":null,
-            "brief":null,
-            "image":
-                {
-                    "main":null,
-                    "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
@@ -121,13 +104,13 @@
         },
         {
             "id":"cat8",
-            "title":null,
+            "title":"Cine Snap",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
@@ -138,13 +121,13 @@
         },
         {
             "id":"cat9",
-            "title":null,
+            "title":"Weather Neeow",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
@@ -155,13 +138,30 @@
         },
         {
             "id":"cat10",
-            "title":null,
+            "title":"Riddler Box",
             "brief":null,
             "image":
                 {
                     "main":null,
                     "mobile":null,
-                    "screenshots":null,
+                    "screenshots":[],
+                    "video":null
+                } 
+            ,
+            "languages":[null],
+            "github":null,
+            "site":null
+
+        },
+        {
+            "id":"cat11",
+            "title":"Pokemon",
+            "brief":null,
+            "image":
+                {
+                    "main":null,
+                    "mobile":null,
+                    "screenshots":[],
                     "video":null
                 } 
             ,
