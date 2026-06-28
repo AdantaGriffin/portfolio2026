@@ -2,6 +2,8 @@ import styles from './projectDetails.module.scss';
 import { useParams } from 'react-router-dom';
 import { useApi } from '../api/api';
 import {motion} from 'motion/react';
+import { Link } from 'react-router-dom';
+
 function ProjectDetails(){
     const {projects, simulations} = useApi();
     const {id} = useParams();
@@ -33,8 +35,9 @@ function ProjectDetails(){
                 <div className={styles.projectsInfo}>
 
                     <div>
+                        <a href={`${filter[0]?.site}`} target="_blank">
                         <h2 className={styles.detailsTitle}>{filter[0]?.title ?? filter2[0]?.title}</h2>
-                        <hr></hr>
+                        </a>
                     </div>
                     
                     <div className={styles.detailsLanguages}>
@@ -68,6 +71,7 @@ function ProjectDetails(){
                             ))}
                         </ul>
                     </div>
+                    
                 </div>
             </motion.section>
         </>

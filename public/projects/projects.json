@@ -2,6 +2,25 @@
     "projects":[
         {
             "id":"project1",
+            "title":"The One",
+            "brief":"",
+            "desc":"The One is a React-based fitness application inspired by One Punch Man's legendary workout. The app dynamically renders exercises and training routines using the Fetch API, manages user interactions with React state, and stores workout history, statistics, and progress in localStorage. Features include guided workout plans, customizable rest timers, and a session history dashboard for tracking completed workouts.",
+            "image":
+                {
+                    "main":"./siteImg/theOneDesk.png",
+                    "mobile":"./siteImg/theOneMobile.jpeg",
+                    "screenshots":[""],
+                    "video":"/siteImg/theOneVid.mov"
+                } 
+            ,
+            "languages":["Html3", "Sass", "JavaScript", "React", "Typescript", "Motion.js"],
+            "github":"",
+            "site":"https://the0ne.netlify.app/",
+            "challenge":"The challenge was creating a functional fitness app inspired by One Punch Man's training routine while maintaining a clean and engaging user experience.",
+            "solution":"Used React state management and localStorage to capture, render, and persist user data, enabling workout tracking and progress retention without requiring a backend server."
+        },
+        {
+            "id":"project2",
             "title":"The Apex",
             "brief":"The Apex is a luxury digital art marketplace built with React.",
             "desc":"The Apex is a luxury digital art marketplace built with React. The platform uses React Router for dynamic page rendering, Fetch API for real-time artwork data retrieval, and Motion React to create fluid transitions and interactive animations.",
@@ -20,7 +39,7 @@
             "solution":"Implemented dynamic routing with React Router DOM to generate individual collection pages, enabling seamless navigation, efficient content rendering, and a scalable application structure.."
         },
         {
-            "id":"project2",
+            "id":"project3",
             "title":"Read 4 Speed",
             "brief":"Interactive storytelling platform featuring smooth page navigation and dynamic state management. ",
             "desc":"Interactive storytelling platform featuring smooth page navigation and dynamic state management. Stories from multiple genres are fetched through a local API and rendered in a responsive interface. Motion React powers seamless animations and transitions, creating an engaging, polished reading experience across the application.",
@@ -39,46 +58,10 @@
             "solution":"Built a dynamic reading interface using React Router DOM, React state management, and the Fetch API to load stories from a local JSON source while supporting customizable speed controls for an engaging user experience.."
         },
         {
-            "id":"project3",
+            "id":"project4",
             "title":null,
             "brief":null,
             "desc":null,
-            "image":
-                {
-                    "main":null,
-                    "mobile":null,
-                    "screenshots":null,
-                    "video":null
-                } 
-            ,
-            "languages":[],
-            "github":null,
-            "site":null,
-            "challenge":"",
-            "solution":""
-        },
-        {
-            "id":"project4",
-            "title":null,
-            "description":null,
-            "image":
-                {
-                    "main":null,
-                    "mobile":null,
-                    "screenshots":null,
-                    "video":null
-                } 
-            ,
-            "languages":[],
-            "github":null,
-            "site":null,
-            "challenge":"",
-            "solution":""
-        },
-        {
-            "id":"project5",
-            "title":null,
-            "description":null,
             "image":
                 {
                     "main":null,
