@@ -2,7 +2,6 @@ import styles from './projectDetails.module.scss';
 import { useParams } from 'react-router-dom';
 import { useApi } from '../api/api';
 import {motion} from 'motion/react';
-import { Link } from 'react-router-dom';
 
 function ProjectDetails(){
     const {projects, simulations} = useApi();
@@ -71,7 +70,7 @@ function ProjectDetails(){
                             ))}
                         </ul>
                     </div>
-                    
+
                 </div>
             </motion.section>
         </>
