@@ -21,38 +21,43 @@ function Skills(){
                     <ul className={styles.skillList}>
 
                         <li className={styles.listHead}>
-                            <p>Languages</p>
-                            <ul className={styles.subList}>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>Sass</li>
-                                <li>JavaScript</li>
-                                <li>TypeScript</li>
-                            </ul>
+                            <details>
+                                <summary>Languages</summary>
+                                <p>HTML5</p>
+                                <p>CSS3</p>
+                                <p>SASS</p>
+                                <p>JavaScript</p>
+                                <p>TypeScript</p>
+                            </details>
                         </li>
+
                         <li className={styles.listHead}>
-                            <p>Frameworks</p>
-                            <ul className={styles.subList}>
-                                <li>React</li>
-                                <li>Jest</li>
-                                <li>Mocha</li>
-                            </ul>
+                            <details>
+                                <summary>Frameworks</summary>
+                                <p>React</p>
+                                <p>Jest</p>
+                                <p>Mocha</p>
+                            </details>
                         </li>
+
                         <li className={styles.listHead}>
-                            <p>Tools</p>
-                            <ul className={styles.subList}>
-                                <li>Git & GitHub</li>
-                                <li>VS Code</li>
-                                <li>Figma</li>
-                            </ul>
+                            <details>
+                                <summary>Tools</summary>
+                                <p>Git & GitHub</p>
+                                <p>VS Code</p>
+                                <p>Figma</p>
+                            </details>
                         </li>
+
                         <li className={styles.listHead}>
-                            <p>UI Skills</p>
-                            <ul className={styles.subList}>
-                                <li>Responsive Design</li>
-                                <li>FlexBox & Grid</li>
-                                <li>Accessibility</li>
-                            </ul>
+                            <details>
+                                <summary>UX/UI</summary>
+                                <p>Responsive Design</p>
+                                <p>Flexbox & Grid</p>
+                                <p>ARIA Accessibility</p>
+                                <p>JavaScript</p>
+                                <p>TypeScript</p>
+                            </details>
                         </li>
 
                     </ul>

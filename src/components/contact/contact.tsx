@@ -21,27 +21,30 @@ function Contact(){
                         Let's connect.
                         </h3>
                         <p>I'm currently open to new opportunities.<br></br>Feel free to reach out.</p>
-                        <form action="https://formspree.io/f/mlgajaeo" method="POST" className={styles.contactForm}>
-                            <input name="name" className={styles.inputName} type="text" placeholder="YourName"/>
-                            <input name="email" className={styles.inputEmail} type="email" placeholder="YourEmail"/>
-                            <input name="message" className={styles.inputMesage} type="text" placeholder="YourMessage"/>
-                            <input className={styles.inputSubmit} type="submit"/>
-                        </form>
-                    </div>
+                        <div className={styles.contactAll}>
+                            <form action="https://formspree.io/f/mlgajaeo" method="POST" className={styles.contactForm}>
+                                <input name="name" className={styles.inputName} type="text" placeholder="YourName"/>
+                                <input name="email" className={styles.inputEmail} type="email" placeholder="YourEmail"/>
+                                <input name="message" className={styles.inputMesage} type="text" placeholder="YourMessage"/>
+                                <input className={styles.inputSubmit} type="submit"/>
+                            </form>
 
-                    <div className={styles.contactLinks}>
-                        <div>
-                            <h5>Email Me</h5>
-                            <a href="mailto:griffinadanta90@gmailcom">griffinadanta90@gmail.com</a>
+                            <div className={styles.contactLinks}>
+                            <div>
+                                <h5>Email Me</h5>
+                                <a href="mailto:griffinadanta90@gmailcom">griffinadanta90@gmail.com</a>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <a href="tel:7188202506">7188202506</a>
+                            </div>
+                            <div>
+                                <h5>City</h5>
+                                <a href="https://brooklyn.org/" target="_blank">Brooklyn</a>
+                            </div>
                         </div>
-                        <div>
-                            <h5>Phone</h5>
-                            <a href="tel:7188202506">7188202506</a>
                         </div>
-                        <div>
-                            <h5>City</h5>
-                            <a href="https://brooklyn.org/" target="_blank">Brooklyn</a>
-                        </div>
+
                     </div>
                 </div>
             </motion.section>

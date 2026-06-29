@@ -14,7 +14,7 @@ function Footer(){
                         <ul className={styles.footerLinks}>
                             <li><a href="" target="_blank"><img src="/links/linkedin.png" height="20px" width="20px" alt="soclink"/></a></li>
                             <li><a href="https://github.com/AdantaGriffin" target="_blank"><img src="/links/github.png" height="20px" width="20px" alt="soclink"/></a></li>
-                            <li><a href="" target="_blank"><img src="/links/instagram.png" height="20px" width="20px"  alt="soclink"/></a></li>
+                            <li><a href="https://www.instagram.com/Ayeee_Geee" target="_blank"><img src="/links/instagram.png" height="20px" width="20px"  alt="soclink"/></a></li>
                         </ul>
                     </div>
                 </footer>

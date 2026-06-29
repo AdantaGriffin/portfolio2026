@@ -67,6 +67,8 @@ import {useState, useEffect, createContext, useContext} from 'react';
         setSimulations: React.Dispatch<React.SetStateAction<Simulation[]>>;
         catalogue: Catalogue[];
         setCatalogue: React.Dispatch<React.SetStateAction<Catalogue[]>>;
+        showNav: boolean;
+        setShowNav:  React.Dispatch<React.SetStateAction<boolean>>;
     };
 
     const ApiContext = createContext<ApiContextType | null>(null);    
@@ -106,11 +108,12 @@ export function ApiProvider({ children }: { children: React.ReactNode }){
         }
         getCatalogue()
     }, []);
-   
-
+   // mobile view nav display
+   const [showNav, setShowNav] = useState(false);
+ 
     return(
         <ApiContext.Provider
-            value={{projects, setProjects, simulations, setSimulations, catalogue, setCatalogue }}
+            value={{projects, setProjects, simulations, setSimulations, catalogue, setCatalogue, showNav, setShowNav }}
         >
             {children}
         </ApiContext.Provider>

@@ -1,10 +1,46 @@
 @media only screen and (max-width: 1050px) {
     nav{
+        button{
+            display: block !important;
+            position: absolute;
+            right: 75px !important;
+            bottom: 20px !important;
+            background: transparent;
+            border: none;
+            img{
+                height: 20px;
+                width: 20px;
+            }
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .navigationList{
+            width: 95%;
+            height: 100svh;
+            background-color: white;
+            display: grid;;
+            position: absolute;
+            top: 70px;
+            right: 40px;
+            opacity: .9;
+            li{
+                align-content: center;
+            }
+        }
+        .inactive{
+            display: none;
+        }
+    }
+}
+nav{
+    button{
         display: none;
     }
 }
-
 .navigationList{
+    padding: 0;
+    margin: 0;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
